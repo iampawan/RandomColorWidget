@@ -1,8 +1,12 @@
 name: random_pk
 description: A new Flutter package that gives a container with random color.
 version: 0.0.1
-author: Pawan Kumar
-homepage:
+author: Pawan Kumar<mtechviral@gmail.com>
+homepage: https://github.com/iampawan/RandomColorWidget
+
+environment:
+  sdk: ">=2.0.0-dev.28.0 <3.0.0"
+
 
 dependencies:
   flutter:

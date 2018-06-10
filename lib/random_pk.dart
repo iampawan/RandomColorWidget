@@ -20,8 +20,10 @@ class RandomContainer extends StatefulWidget {
   final double width;
   final double height;
   final Widget child;
+  final bool changeOnRedraw;
 
-  RandomContainer({this.width, this.height, this.child});
+  RandomContainer(
+      {this.width, this.height, this.child, this.changeOnRedraw = true});
 
   @override
   _RandomContainerState createState() => new _RandomContainerState();
@@ -42,7 +44,7 @@ class _RandomContainerState extends State<RandomContainer> {
     return new Container(
       width: widget.width,
       height: widget.height,
-      color: RandomColor.next(),
+      color: widget.changeOnRedraw == true ? RandomColor.next() : randomColor,
       child: widget.child,
     );
   }

@@ -42,7 +42,7 @@ class _RandomContainerState extends State<RandomContainer> {
     return new Container(
       width: widget.width,
       height: widget.height,
-      color: randomColor,
+      color: RandomColor.next(),
       child: widget.child,
     );
   }

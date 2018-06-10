@@ -1,3 +1,3 @@
-## [0.0.1] 
+## [0.0.2] 
 
-* RandomContainer Added.
+* RandomContainer Modified for generating color after every redraw.
